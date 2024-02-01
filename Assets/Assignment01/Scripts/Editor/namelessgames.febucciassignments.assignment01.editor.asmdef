@@ -1,0 +1,16 @@
+{
+    "name": "namelessgames.febucciassignments.assignment01.editor",
+    "rootNamespace": "",
+    "references": [
+        "namelessgames.febucciassignments.assignment01"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Assignments03/Styles/NodeStyle.uss?fileID=7433441132597879392&amp;guid=1679b28af83f4f04f85731b626a5e947&amp;type=3#NodeStyle" />
+    <ui:VisualElement name="node-content">
+        <ui:VisualElement name="type-container">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="type-label" />
+        </ui:VisualElement>
+        <ui:VisualElement name="data-container">
+            <ui:VisualElement name="description-container">
+                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="description-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="divider" />
+            <ui:VisualElement name="output-ports-container" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="node-selection" picking-mode="Ignore" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+</ui:UXML>

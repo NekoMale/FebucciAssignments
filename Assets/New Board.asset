@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3198147930757897199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba48170c9bfeb94088f7537fc4255ec, type: 3}
+  m_Name: NodoQuattroFigli (90c01)
+  m_EditorClassIdentifier: 
+  Guid: 90c0153ddeb4c184a97158a22c64fe4a
+  position: {x: 0, y: 0}
+  Description: Add a description for this node...
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48a1ab7792c5fb488c3b2da346a3fb2, type: 3}
+  m_Name: New Board
+  m_EditorClassIdentifier: 
+  Root: {fileID: 1030416955759180111}
+  Nodes:
+  - {fileID: 1030416955759180111}
+  - {fileID: 8013559310799979077}
+  - {fileID: -3198147930757897199}
+--- !u!114 &1030416955759180111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d5e542648932a43a3bd1eb8a637582, type: 3}
+  m_Name: BinaryNode (8fe5b)
+  m_EditorClassIdentifier: 
+  Guid: 8fe5b424209ac844890d794ddce2c6ff
+  position: {x: 260, y: 176}
+  Description: Add a description for this node...
+  children:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &8013559310799979077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3503db3fbc93e344aa6b9da2746635d6, type: 3}
+  m_Name: SingleNode (7de5e)
+  m_EditorClassIdentifier: 
+  Guid: 7de5e00f32c7ebb4d995b11ae9ee3f94
+  position: {x: 312, y: 368}
+  Description: Add a description for this node...
+  child: {fileID: 0}

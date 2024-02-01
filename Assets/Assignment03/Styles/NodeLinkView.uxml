@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Assignments03/Styles/NodeLinkStyle.uss?fileID=7433441132597879392&amp;guid=0429d805e10eaf04b944afc7e53f23d4&amp;type=3#NodeLinkStyle" />
+    <ui:VisualElement name="node-link-filler" />
+</ui:UXML>
