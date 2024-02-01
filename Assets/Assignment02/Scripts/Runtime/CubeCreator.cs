@@ -3,25 +3,25 @@ using UnityEngine;
 namespace Core.Assignment02
 {
     /// <summary>
-    /// Class to add to a GameObject in order to manage creation of a cuboid
+    /// Class to add to a GameObject in order to manage creation of a cube
     /// </summary>
-    public class CuboidCreator : MonoBehaviour
+    public class CubeCreator : MonoBehaviour
     {
         /// <summary>
-        /// Cuboid start position, rotation will be applied on this point
+        /// Cube start position, rotation will be applied on this point
         /// </summary>
         [SerializeField] Vector3 start = new Vector3(0f, -1f, 0f);
         /// <summary>
-        /// Cuboid end position
+        /// Cube end position
         /// </summary>
         [SerializeField] Vector3 end = new Vector3(1f, 1f, 1f);
         /// <summary>
-        /// Cuboid rotation
+        /// Cube rotation
         /// </summary>
         [SerializeField] Quaternion rotation = Quaternion.identity;
 
         /// <summary>
-        /// Cuboid start position property, rotation will be applied on this point
+        /// Cube start position property, rotation will be applied on this point
         /// </summary>
         public Vector3 Start
         {
@@ -30,7 +30,7 @@ namespace Core.Assignment02
         }
 
         /// <summary>
-        /// Cuboid end position property
+        /// Cube end position property
         /// </summary>
         public Vector3 End
         {
@@ -39,7 +39,7 @@ namespace Core.Assignment02
         }
 
         /// <summary>
-        /// Cuboid property
+        /// Cube property
         /// </summary>
         public Quaternion Rotation
         {

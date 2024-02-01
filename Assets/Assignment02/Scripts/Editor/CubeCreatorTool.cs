@@ -5,36 +5,36 @@ using UnityEngine;
 
 namespace Core.Assignment02
 {
-    [EditorTool("Cuboid Creator Tool", typeof(CuboidCreator))]
-    class CuboidCreatorTool : EditorTool, IDrawSelectedHandles
+    [EditorTool("Cube Creator Tool", typeof(CubeCreator))]
+    class CubeCreatorTool : EditorTool, IDrawSelectedHandles
     {
-        static CuboidCreatorTool platformTool;
+        static CubeCreatorTool platformTool;
 
-        [Shortcut("Activate Cuboid Creator Tool", typeof(SceneView), KeyCode.P)]
-        static void OpenCuboidCreatorToolShortcut()
+        [Shortcut("Activate Cube Creator Tool", typeof(SceneView), KeyCode.P)]
+        static void OpenCubeCreatorToolShortcut()
         {
-            if (Selection.GetFiltered<CuboidCreator>(SelectionMode.TopLevel).Length > 0)
+            if (Selection.GetFiltered<CubeCreator>(SelectionMode.TopLevel).Length > 0)
             {
-                ToolManager.SetActiveTool<CuboidCreatorTool>();
+                ToolManager.SetActiveTool<CubeCreatorTool>();
                 return;
             }
 
-            CuboidCreator cuboidCreatorGameObject = FindObjectOfType<CuboidCreator>();
+            CubeCreator cubeCreatorGameObject = FindObjectOfType<CubeCreator>();
 
-            if (cuboidCreatorGameObject == null)
+            if (cubeCreatorGameObject == null)
             {
-                SceneView.lastActiveSceneView.ShowNotification(new GUIContent("Add a Cuboid Creator component in scene first"), .1f);
+                SceneView.lastActiveSceneView.ShowNotification(new GUIContent("Add a Cube Creator component in scene first"), .1f);
                 return;
             }
 
-            Selection.activeGameObject = cuboidCreatorGameObject.gameObject;
+            Selection.activeGameObject = cubeCreatorGameObject.gameObject;
 
-            Selection.selectionChanged += ToolManager.SetActiveTool<CuboidCreatorTool>;
-            Selection.selectionChanged += () => Selection.selectionChanged -= ToolManager.SetActiveTool<CuboidCreatorTool>;
+            Selection.selectionChanged += ToolManager.SetActiveTool<CubeCreatorTool>;
+            Selection.selectionChanged += () => Selection.selectionChanged -= ToolManager.SetActiveTool<CubeCreatorTool>;
         }
 
-        [Shortcut("Create Cuboid Tool", typeof(SceneView), KeyCode.Y)]
-        static void CreateCuboidToolShortcut()
+        [Shortcut("Create Cube Tool", typeof(SceneView), KeyCode.Y)]
+        static void CreateCubeToolShortcut()
         {
             if (platformTool == null)
             {
@@ -42,20 +42,20 @@ namespace Core.Assignment02
                 return;
             }
 
-            // can handle multiple CuboidCreators
+            // can handle multiple CubeCreators
             foreach (var obj in platformTool.targets)
             {
-                if (obj is not CuboidCreator platform)
+                if (obj is not CubeCreator platform)
                 {
                     continue;
                 }
-                Quaternion rotation = platform.Rotation; // get cuboid rotation
-                Vector3 start = platform.Start; // get cuboid start position
-                Vector3 end = start + rotation * (platform.End - start); // get rotated cuboid end position
+                Quaternion rotation = platform.Rotation; // get cube rotation
+                Vector3 start = platform.Start; // get cube start position
+                Vector3 end = start + rotation * (platform.End - start); // get rotated cube end position
 
                 GameObject newCube = GameObject.CreatePrimitive(PrimitiveType.Cube); // create new cube
-                newCube.name = "Cuboid";
-                // apply cuboid settings to cube
+                newCube.name = "Cube";
+                // apply cube settings to cube
                 newCube.transform.position = (start + end) * 0.5f;
                 newCube.transform.localScale = platformTool.Abs(platform.End - start);
                 newCube.transform.rotation = rotation;
@@ -64,13 +64,13 @@ namespace Core.Assignment02
 
         public override void OnActivated()
         {
-            SceneView.lastActiveSceneView.ShowNotification(new GUIContent("Entering Cuboid Creator Tool"), .1f);
+            SceneView.lastActiveSceneView.ShowNotification(new GUIContent("Entering Cube Creator Tool"), .1f);
             platformTool = this;
         }
 
         public override void OnWillBeDeactivated()
         {
-            SceneView.lastActiveSceneView.ShowNotification(new GUIContent("Exiting Cuboid Creator Tool"), .1f);
+            SceneView.lastActiveSceneView.ShowNotification(new GUIContent("Exiting CubeH Creator Tool"), .1f);
             platformTool = null;
         }
 
@@ -81,16 +81,16 @@ namespace Core.Assignment02
 
             foreach (var obj in targets)
             {
-                if (obj is not CuboidCreator platform)
+                if (obj is not CubeCreator platform)
                     continue;
 
                 EditorGUI.BeginChangeCheck();
 
-                Quaternion rotation = platform.Rotation; // get rotation of current cuboid to create
-                Vector3 start = platform.Start; // get start position of current cuboid to create
+                Quaternion rotation = platform.Rotation; // get rotation of current cube to create
+                Vector3 start = platform.Start; // get start position of current cube to create
                 Handles.TransformHandle(ref start, ref rotation); // create handle at start position with rotation
 
-                // rotate end position in order to make it follows the cuboid rotation
+                // rotate end position in order to make it follows the cube rotation
                 Vector3 end = platform.Start + rotation * (platform.End - platform.Start);
                 end = Handles.PositionHandle(end, rotation); // create handle at rotated end position with rotation
 
@@ -99,7 +99,7 @@ namespace Core.Assignment02
                     Undo.RecordObject(platform, "Set Platform Destinations");
 
                     rotation.Normalize(); // normalize rotation
-                                          // assigning new values to cuboid creator
+                                          // assigning new values to cube creator
                     platform.Rotation = rotation;
                     platform.Start = start;
                     // set the end position as it was not rotated
@@ -112,7 +112,7 @@ namespace Core.Assignment02
         {
             foreach (var obj in targets)
             {
-                if (obj is not CuboidCreator platform)
+                if (obj is not CubeCreator platform)
                 {
                     continue;
                 }

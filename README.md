@@ -37,6 +37,7 @@ Opening CubeCreatorTool you'll have two handles:
 - start point handle allows to set scale as end point handle and rotation
 
 In order to work, you need a GameObject (at top level hierarchy) in scene with CubeCreator component
+Multiple CubeCreator selected work together creating their own cube shown in scene view.
 
 | Shortcut | Description |
 | --- | --- |
