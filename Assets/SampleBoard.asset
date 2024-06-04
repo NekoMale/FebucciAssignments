@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9126406351441020758
+--- !u!114 &-6727182906234285213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,33 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06d5e542648932a43a3bd1eb8a637582, type: 3}
-  m_Name: BinaryNode (1cee2)
+  m_Name: BinaryNode (c6ac1)
   m_EditorClassIdentifier: 
-  Guid: 1cee2b896c68368439056ddf9e6de09a
-  position: {x: 994, y: 214}
+  Guid: c6ac1f05c2a034e42837e5d885e56c0d
+  position: {x: 324, y: 471}
   Description: Add a description for this node...
   children:
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &-9083621263696228812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d5e542648932a43a3bd1eb8a637582, type: 3}
-  m_Name: BinaryNode (de0f4)
-  m_EditorClassIdentifier: 
-  Guid: de0f4fb73eeb2724c85baf25ed2ebae3
-  position: {x: 856, y: 546}
-  Description: Add a description for this node...
-  children:
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &-2957573004786425546
+--- !u!114 &-5736616615456526314
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,13 +28,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3503db3fbc93e344aa6b9da2746635d6, type: 3}
-  m_Name: SingleNode (726b5)
+  m_Name: SingleNode (9a852)
   m_EditorClassIdentifier: 
-  Guid: 726b555e8a427a44a981754e53eba107
-  position: {x: 732, y: 101}
+  Guid: 9a85293ee7991b94282410874f7cda87
+  position: {x: 386, y: 275}
   Description: Add a description for this node...
-  child: {fileID: -9126406351441020758}
---- !u!114 &-1817108375065467496
+  child: {fileID: 0}
+--- !u!114 &-3714014088689643752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,15 +44,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06d5e542648932a43a3bd1eb8a637582, type: 3}
-  m_Name: BinaryNode (85524)
+  m_Name: BinaryNode (18c25)
   m_EditorClassIdentifier: 
-  Guid: 85524023cfb00184c8ad7121d78a8eaf
-  position: {x: 378, y: 112}
+  Guid: 18c259dba2e941d488cd6a6fbc0c6032
+  position: {x: 655, y: 517}
   Description: Add a description for this node...
   children:
-  - {fileID: -2957573004786425546}
-  - {fileID: 3239243468063925791}
---- !u!114 &-973162498285670883
+  - {fileID: 3504786024756906468}
+  - {fileID: 0}
+--- !u!114 &-2641617375541773659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80,12 +62,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3503db3fbc93e344aa6b9da2746635d6, type: 3}
-  m_Name: SingleNode (0a005)
+  m_Name: SingleNode (ee557)
   m_EditorClassIdentifier: 
-  Guid: 0a00517663ac4f64c81fa4fc702e4b70
-  position: {x: 70, y: 163}
+  Guid: ee5579e18ad12b047af4558b687fb2a6
+  position: {x: 101, y: 151}
   Description: Add a description for this node...
-  child: {fileID: 3239243468063925791}
+  child: {fileID: 859649971012117290}
+--- !u!114 &-1883701591470284364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d5e542648932a43a3bd1eb8a637582, type: 3}
+  m_Name: BinaryNode (42520)
+  m_EditorClassIdentifier: 
+  Guid: 4252032434ed99e409d263d19d255ba7
+  position: {x: 359, y: 688}
+  Description: Add a description for this node...
+  children:
+  - {fileID: 0}
+  - {fileID: -3714014088689643752}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,19 +96,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c48a1ab7792c5fb488c3b2da346a3fb2, type: 3}
-  m_Name: New Board
+  m_Name: SampleBoard
   m_EditorClassIdentifier: 
-  Root: {fileID: -1817108375065467496}
+  Root: {fileID: 859649971012117290}
   Nodes:
-  - {fileID: -1817108375065467496}
-  - {fileID: 766853498795210574}
-  - {fileID: -9126406351441020758}
-  - {fileID: -2957573004786425546}
-  - {fileID: -973162498285670883}
-  - {fileID: -9083621263696228812}
-  - {fileID: 3239243468063925791}
-  - {fileID: 1879389507608267339}
---- !u!114 &766853498795210574
+  - {fileID: 859649971012117290}
+  - {fileID: -5736616615456526314}
+  - {fileID: 8801633115263433374}
+  - {fileID: 6615650380021244037}
+  - {fileID: -3714014088689643752}
+  - {fileID: 3504786024756906468}
+  - {fileID: -1883701591470284364}
+  - {fileID: -2641617375541773659}
+  - {fileID: 5885813155662740722}
+  - {fileID: -6727182906234285213}
+--- !u!114 &859649971012117290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,13 +120,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3503db3fbc93e344aa6b9da2746635d6, type: 3}
-  m_Name: SingleNode (78908)
+  m_Name: SingleNode (b33ca)
   m_EditorClassIdentifier: 
-  Guid: 78908a8af2705b74f955f143f13e08ec
-  position: {x: 116, y: 489}
+  Guid: b33cace47bf190449901e578ff3fc36c
+  position: {x: 527, y: 66}
   Description: Add a description for this node...
-  child: {fileID: 1879389507608267339}
---- !u!114 &1879389507608267339
+  child: {fileID: 8801633115263433374}
+--- !u!114 &3504786024756906468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3503db3fbc93e344aa6b9da2746635d6, type: 3}
+  m_Name: SingleNode (9d39d)
+  m_EditorClassIdentifier: 
+  Guid: 9d39de2f3196f9a4b8b6ad71bdf7d0f6
+  position: {x: 993, y: 596}
+  Description: Add a description for this node...
+  child: {fileID: 0}
+--- !u!114 &5885813155662740722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,15 +152,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06d5e542648932a43a3bd1eb8a637582, type: 3}
-  m_Name: BinaryNode (31066)
+  m_Name: BinaryNode (3a1fc)
   m_EditorClassIdentifier: 
-  Guid: 31066043c49e8e641b37225796f268f9
-  position: {x: 473, y: 545}
+  Guid: 3a1fc1488251dd441b03549aaf086d77
+  position: {x: 38, y: 583}
   Description: Add a description for this node...
   children:
-  - {fileID: -9083621263696228812}
   - {fileID: 0}
---- !u!114 &3239243468063925791
+  - {fileID: -1883701591470284364}
+--- !u!114 &6615650380021244037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,9 +170,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3503db3fbc93e344aa6b9da2746635d6, type: 3}
-  m_Name: SingleNode (f144c)
+  m_Name: SingleNode (cd4df)
   m_EditorClassIdentifier: 
-  Guid: f144c5e952b2c7c4dbc5ac528583de0b
-  position: {x: 731, y: 252}
+  Guid: cd4dfc6e40f52b34abf079d70402deb1
+  position: {x: 801, y: 331}
   Description: Add a description for this node...
   child: {fileID: 0}
+--- !u!114 &8801633115263433374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d5e542648932a43a3bd1eb8a637582, type: 3}
+  m_Name: BinaryNode (48a29)
+  m_EditorClassIdentifier: 
+  Guid: 48a2901f145c8ac459f5121b40e3543a
+  position: {x: 891, y: 87}
+  Description: Add a description for this node...
+  children:
+  - {fileID: 0}
+  - {fileID: 0}

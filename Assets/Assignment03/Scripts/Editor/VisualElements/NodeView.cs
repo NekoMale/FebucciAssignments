@@ -163,6 +163,7 @@ namespace Core.Assignment03
             // otherwise if link exists and new selected element is diferrent from starting one
             // connect fromNode to selected element
             fromNode.Q("connect-child-" + portIndex).RemoveFromClassList("connecting");
+            fromNode.DeleteExistingLink(portIndex);
             (parent as BoardView).CreateNodeLink(fromNode, this, portIndex);
             fromNode.Q("connect-child-" + portIndex).AddToClassList("connected");
             fromNode = null;
@@ -181,7 +182,7 @@ namespace Core.Assignment03
         /// Delete the link on port at received index if exists
         /// </summary>
         /// <param name="portIndex">Port index where delete the link</param>
-        private void ChangeExistingLink(int portIndex)
+        private void DeleteExistingLink(int portIndex)
         {
             if (Node.GetChildren()[portIndex] == null)
             {
