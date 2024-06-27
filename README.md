@@ -114,3 +114,21 @@ You can add your own style in UIBuilder tool.
 **N.B.**
 Actually you have to manually add the command "AddToClassList"s class in NodeView constructor.
 I'll manage auto-add class as soon as possible
+
+## Assignments 04 - ScreenShot taker and editor
+
+### ScreenShot taker
+
+You can take screenshot of what camera is rendering. You can zoom in and out up 10x and change camera grid size.
+
+Screenshots saved in "Image/Assignment/" path.
+
+#### ScreenShot editor
+
+This tool let you make simple editing to your screenshot in "Image/Assignment/".
+
+Actually you can:
+
+- Flip on X and Y axis (only 1 axe or both)
+- Invert screenshot colors
+- Keep or not original screenshot
