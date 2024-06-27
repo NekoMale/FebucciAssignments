@@ -123,7 +123,7 @@ You can take screenshot of what camera is rendering. You can zoom in and out up 
 
 Screenshots saved in "Image/Assignment/" path.
 
-#### ScreenShot editor
+### ScreenShot editor
 
 This tool let you make simple editing to your screenshot in "Image/Assignment/".
 
