@@ -1,0 +1,37 @@
+#gallery-scroll-view {
+    background-color: rgb(56, 56, 56);
+    padding-top: 5px;
+    flex-grow: 1;
+}
+
+#gallery-grid {
+    flex-direction: row;
+    flex-grow: 1;
+    align-self: auto;
+    flex-wrap: wrap;
+}
+
+.screenshot-preview {
+    width: 240px;
+    height: 135px;
+    max-width: 240px;
+    max-height: 135px;
+    min-width: 240px;
+    min-height: 135px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.screenshot-preview.selected {
+    border-left-color: rgb(247, 255, 148);
+    border-right-color: rgb(247, 255, 148);
+    border-top-color: rgb(247, 255, 148);
+    border-bottom-color: rgb(247, 255, 148);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}

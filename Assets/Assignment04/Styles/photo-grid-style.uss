@@ -1,0 +1,43 @@
+#grid-container {
+    flex-grow: 1;
+}
+
+#columns-container {
+    flex-direction: row;
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 33%;
+    padding-right: 33%;
+    justify-content: space-between;
+}
+
+.column {
+    background-color: rgb(255, 255, 255);
+    max-width: 2px;
+    min-width: 2px;
+}
+
+#rows-container {
+    flex-direction: column;
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding-top: 17%;
+    padding-bottom: 17%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    background-color: rgb(255, 255, 255);
+    max-height: 2px;
+    min-height: 2px;
+}

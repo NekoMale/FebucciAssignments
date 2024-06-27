@@ -1,0 +1,42 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Assignment04/Styles/display-settings-style.uss?fileID=7433441132597879392&amp;guid=123a810b21b356345964b9a46709abb6&amp;type=3#display-settings-style" />
+    <ui:VisualElement name="grid-container" style="flex-grow: 1;">
+        <ui:VisualElement name="columns-container" style="flex-grow: 1;">
+            <ui:VisualElement name="column-1" class="column" style="flex-grow: 1;" />
+            <ui:VisualElement name="column-2" class="column" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="rows-container" style="flex-grow: 1;">
+            <ui:VisualElement name="row-1" class="row" style="flex-grow: 1;" />
+            <ui:VisualElement name="row-2" class="row" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="display-settings-container">
+        <ui:VisualElement name="aspect-ratio-container" class="label-container">
+            <ui:Label tabindex="-1" text="Ratio:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="aspect-ratio-label" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="aspect-ratio-value-label" />
+        </ui:VisualElement>
+        <ui:VisualElement name="zoom-factor-container" class="label-container">
+            <ui:Label tabindex="-1" text="Zoom:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zoom-factor-label" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zoom-factor-value-label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="settings-container">
+        <ui:VisualElement name="sliders-container">
+            <ui:VisualElement name="zoom-factor-slider-container" class="slider-container">
+                <ui:VisualElement name="zoom-in-icon" class="slider-icon" style="background-image: url(&apos;project://database/Assets/Assignment04/Styles/ScreenshotTool/zoom-in-icon.png?fileID=2800000&amp;guid=39350a74b2e7e1b4496967b94e7df757&amp;type=3#zoom-in-icon&apos;);" />
+                <ui:Slider picking-mode="Ignore" value="1" high-value="10" name="zoom-factor-slider" low-value="1" direction="Vertical" />
+                <ui:VisualElement name="zoom-out-icon" class="slider-icon" style="background-image: url(&apos;project://database/Assets/Assignment04/Styles/ScreenshotTool/zoom-out-icon.png?fileID=2800000&amp;guid=6335591378266524f8b9d141a057949e&amp;type=3#zoom-out-icon&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="grid-slider-container" class="slider-container">
+                <ui:VisualElement name="grid-in-icon" class="slider-icon" style="background-image: url(&apos;project://database/Assets/Assignment04/Styles/ScreenshotTool/camera-grid-in.png?fileID=2800000&amp;guid=7813e3114a748a64cb47209723f4ae8d&amp;type=3#camera-grid-in&apos;);" />
+                <ui:Slider picking-mode="Ignore" value="0.66" high-value="1" name="grid-slider" low-value="0" direction="Vertical" />
+                <ui:VisualElement name="grid-out-icon" class="slider-icon" style="background-image: url(&apos;project://database/Assets/Assignment04/Styles/ScreenshotTool/camera-grid-out.png?fileID=2800000&amp;guid=d2ec39d9d2edbc04d8855b3107211463&amp;type=3#camera-grid-out&apos;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button parse-escape-sequences="false" display-tooltip-when-elided="false" name="screenshot-button" enable-rich-text="false">
+            <ui:VisualElement picking-mode="Ignore" name="button-border">
+                <ui:VisualElement picking-mode="Ignore" name="button-filler" />
+            </ui:VisualElement>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,17 @@
+{
+    "name": "namelessgames.febucciassignments.assignment04.editor",
+    "rootNamespace": "",
+    "references": [
+        "namelessgames.febucciassignments.assignment04",
+        "namelessgames.febucciassignments.assignment03.editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

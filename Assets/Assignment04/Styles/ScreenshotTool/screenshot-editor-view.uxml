@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Assignment04/Styles/screenshot-editor-style.uss?fileID=7433441132597879392&amp;guid=8ddf4ac78ba2a6f4bbcd949c61f594ea&amp;type=3#screenshot-editor-style" />
+    <ui:VisualElement name="screenshot-editor-container">
+        <ui:VisualElement name="screenshot-preview-container">
+            <ui:VisualElement name="screenshot-preview" style="min-height: 100%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="options-container">
+            <ui:VisualElement name="flip-options-container">
+                <ui:Toggle label="Flip X" name="flip-x-toggle" class="flip-toggle" />
+                <ui:Toggle label="Flip Y" name="flip-y-toggle" class="flip-toggle" />
+            </ui:VisualElement>
+            <ui:Toggle label="Color invert" name="color-invert-toggle" />
+            <ui:Toggle label="Keep original file" name="keep-original-toggle" />
+        </ui:VisualElement>
+        <ui:Button text="Save" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-button" />
+    </ui:VisualElement>
+</ui:UXML>

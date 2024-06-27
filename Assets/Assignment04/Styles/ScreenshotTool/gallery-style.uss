@@ -1,0 +1,5 @@
+#gallery-container {
+    background-color: rgb(231, 231, 231);
+    flex-direction: row;
+    flex-grow: 1;
+}

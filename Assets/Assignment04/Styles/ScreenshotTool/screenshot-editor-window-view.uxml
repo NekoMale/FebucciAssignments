@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Assignment04/Styles/ScreenshotTool/gallery-style.uss?fileID=7433441132597879392&amp;guid=1273265270d2a484eab4e37fc45f5503&amp;type=3#gallery-style" />
+    <ui:VisualElement name="gallery-container" style="flex-grow: 1;">
+        <Core.Assignment04.ScreenShotGalleryView />
+        <Core.Assignment04.ScreenShotEditorView />
+    </ui:VisualElement>
+</ui:UXML>

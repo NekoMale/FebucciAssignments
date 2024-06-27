@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Assignment04/Styles/photo-grid-style.uss?fileID=7433441132597879392&amp;guid=79c97b0c1dedb1a45be1248adae934fa&amp;type=3#photo-grid-style" />
+    <ui:VisualElement name="grid-container" style="flex-grow: 1;">
+        <ui:VisualElement name="columns-container" style="flex-grow: 1;">
+            <ui:VisualElement name="column-1" class="column" style="flex-grow: 1;" />
+            <ui:VisualElement name="column-2" class="column" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="rows-container" style="flex-grow: 1;">
+            <ui:VisualElement name="row-1" class="row" style="flex-grow: 1;" />
+            <ui:VisualElement name="row-2" class="row" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

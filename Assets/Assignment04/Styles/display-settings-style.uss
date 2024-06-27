@@ -1,0 +1,161 @@
+#display-settings-container {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.label-container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+#settings-container {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    padding-bottom: 17px;
+}
+
+#sliders-container {
+    flex-direction: row;
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+.slider-container {
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.slider-container .slider-icon {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.slider-container .unity-slider {
+    height: 150px;
+}
+
+#screenshot-button {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgb(42, 42, 42);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+#button-border {
+    background-color: rgb(126, 126, 126);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 46px;
+    height: 46px;
+    border-top-left-radius: 47px;
+    border-top-right-radius: 47px;
+    border-bottom-right-radius: 47px;
+    border-bottom-left-radius: 47px;
+}
+
+#button-filler {
+    background-color: rgb(62, 62, 62);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 42px;
+    height: 42px;
+    border-top-left-radius: 43px;
+    border-top-right-radius: 43px;
+    border-bottom-right-radius: 43px;
+    border-bottom-left-radius: 43px;
+}
+
+#screenshot-button:hover #button-filler {
+    background-color: rgb(94, 94, 94);
+}
+
+#screenshot-button:active #button-filler {
+    background-color: rgb(126, 126, 126);
+}
+
+#grid-container {
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#columns-container {
+    flex-direction: row;
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 33%;
+    padding-right: 33%;
+    justify-content: space-between;
+}
+
+.column {
+    background-color: rgb(255, 255, 255);
+    max-width: 2px;
+    min-width: 2px;
+}
+
+#rows-container {
+    flex-direction: column;
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding-top: 17%;
+    padding-bottom: 17%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    background-color: rgb(255, 255, 255);
+    max-height: 2px;
+    min-height: 2px;
+}

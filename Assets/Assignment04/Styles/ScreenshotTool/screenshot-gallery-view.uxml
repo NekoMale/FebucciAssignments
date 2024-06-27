@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Assignment04/Styles/screenshot-gallery-style.uss?fileID=7433441132597879392&amp;guid=64aac14fdef686f41972c968086f41a5&amp;type=3#screenshot-gallery-style" />
+    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="gallery-scroll-view" horizontal-scroller-visibility="Hidden">
+        <ui:VisualElement name="gallery-grid" class="gallery-row" />
+    </ui:ScrollView>
+</ui:UXML>
