@@ -132,3 +132,7 @@ Actually you can:
 - Flip on X and Y axis (only 1 axe or both)
 - Invert screenshot colors
 - Keep or not original screenshot
+
+**N.B.**
+Every font in this tool has been made bigger than usual in order to make easier to use for any people with dyslexia.
+In commercial version font size could be customizable.
